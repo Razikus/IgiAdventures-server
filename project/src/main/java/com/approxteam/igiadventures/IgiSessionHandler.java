@@ -28,4 +28,8 @@ public class IgiSessionHandler {
     public void removeSession(Session session) {
         sessions.remove(session);
     }
+
+    public Set<Session> getSessions() {
+	return sessions;
+    }
 }

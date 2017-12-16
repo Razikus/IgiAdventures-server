@@ -19,11 +19,14 @@ public class Action
     @JsonView(Views.TopActionView.class)
     private int howmuch;
     
-    @JsonView(Views.AddActionView.class) 
+    @JsonView(Views.NicknameActionView.class) 
     private String nickname;
     
     @JsonView(Views.AddActionView.class) 
     private double score;
+
+    @JsonView(Views.MessageActionView.class) 
+    private String message;
 
     public String getActionName()
     {
@@ -43,6 +46,10 @@ public class Action
     public int getHowmuch()
     {
         return howmuch;
+    }
+
+    public String getMessage() {
+	return message;
     }
 
     public void setHowmuch(int howmuch)

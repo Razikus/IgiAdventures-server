@@ -15,11 +15,19 @@ public class Views
         
     }
     
-    public static class AddActionView extends ActionView {
+    public static class NicknameActionView extends ActionView {
+        
+    }
+    
+    public static class AddActionView extends NicknameActionView {
         
     }
     
     public static class TopActionView extends ActionView {
+        
+    }
+    
+    public static class MessageActionView extends NicknameActionView {
         
     }
     
